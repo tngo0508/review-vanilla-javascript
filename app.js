@@ -1,39 +1,53 @@
+// WINDOWS METHODS / OBJECTS / PROPERTIES
+// console.log(123);
+
+// Alert
+// const input = prompt();
+// alert(input);
+
+// Confirm
+// if (confirm("Are you sure")) {
+//   console.log("YES");
+// } else {
+//   console.log("NO");
+// }
+
 let val;
 
-// number to string
-val = String(5555);
-val = String(4 + 4);
-// Bool to string
-val = String(true);
-// date to string
-val = String(new Date());
-// array to string
-val = String([1, 2, 3, 4]);
+// Outer height and width
+val = window.outerHeight;
+val = window.outerWidth;
+// Inner height and width
+val = window.innerHeight;
+val = window.innerWidth;
 
-// toString()
-val = (5).toString();
-val = true.toString();
+// Scroll points
+val = window.scrollY;
+val = window.scrollX;
 
-// string to number
-val = Number("5");
-val = Number(true);
-val = Number(false);
-val = Number(null);
-val = Number("hello");
-val = Number([1, 2, 3]);
+// Location Object
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.href;
+val = window.location.search;
 
-val = parseInt("100.30");
-val = parseFloat("100.30");
+// Redirect
+// window.location.href = "http://google.com";
+// Reload
+// window.location.reload();
 
-// // output
-// console.log(val);
-// console.log(typeof val);
-// // console.log(val.length);
-// console.log(val.toFixed(2));
+// History Object
+// window.history.go(-1);
+// val = window.history.length;
 
-const val1 = String(5);
-const val2 = 6;
-const sum = Number(val1 + val2);
+// Navigator Object
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.userAgent;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+val = window.navigator.language;
 
-console.log(sum);
-console.log(typeof sum);
+console.log(val);
