@@ -1,53 +1,36 @@
-// WINDOWS METHODS / OBJECTS / PROPERTIES
-// console.log(123);
-
-// Alert
-// const input = prompt();
-// alert(input);
-
-// Confirm
-// if (confirm("Are you sure")) {
-//   console.log("YES");
-// } else {
-//   console.log("NO");
-// }
-
 let val;
 
-// Outer height and width
-val = window.outerHeight;
-val = window.outerWidth;
-// Inner height and width
-val = window.innerHeight;
-val = window.innerWidth;
+val = document;
+val = document.all;
+val = document.all[2];
+val = document.all.length;
+val = document.head;
+val = document.body;
+val = document.doctype;
+val = document.domain;
+val = document.URL;
+val = document.contentType;
 
-// Scroll points
-val = window.scrollY;
-val = window.scrollX;
+val = document.forms;
+val = document.forms[0];
+val = document.forms[0].id;
+val = document.forms[0].action;
+val = document.forms[0].method;
 
-// Location Object
-val = window.location;
-val = window.location.hostname;
-val = window.location.port;
-val = window.location.href;
-val = window.location.search;
+val = document.links;
+val = document.links[0];
+val = document.links[0].id;
+val = document.links[0].className;
+val = document.links[0].classList;
 
-// Redirect
-// window.location.href = "http://google.com";
-// Reload
-// window.location.reload();
+val = document.images;
+val = document.scripts;
 
-// History Object
-// window.history.go(-1);
-// val = window.history.length;
+let scripts = document.scripts;
+let scriptsArr = Array.from(scripts);
 
-// Navigator Object
-val = window.navigator;
-val = window.navigator.appName;
-val = window.navigator.appVersion;
-val = window.navigator.userAgent;
-val = window.navigator.platform;
-val = window.navigator.vendor;
-val = window.navigator.language;
+scriptsArr.forEach(function (script) {
+  console.log(script);
+});
 
 console.log(val);
