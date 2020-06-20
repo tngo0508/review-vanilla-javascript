@@ -1,32 +1,35 @@
-// // document.getElementById()
+// document.querySelector(".clear-tasks").addEventListener("click", function (e) {
+//   e.preventDefault();
+//   console.log("Hello World");
+// });
+document.querySelector(".clear-tasks").addEventListener("click", onclick);
 
-// console.log(document.getElementById("task-title"));
+function onclick(e) {
+  // console.log("Clicked");
+  let val;
 
-// // Get things from the element
-// console.log(document.getElementById("task-title").id);
+  val = e;
 
-// const taskTitle = document.getElementById("task-title");
+  // Event target element
+  val = e.target;
+  val = e.target.id;
+  val = e.target.className;
+  val = e.target.classList;
 
-// // Change styling
-// taskTitle.style.background = "#333";
-// taskTitle.style.color = "#fff";
-// taskTitle.style.padding = "5px";
-// // taskTitle.style.display = "none";
+  // e.target.innerText = "Hello";
+  // Event type
+  val = e.type;
 
-// // Change content
-// taskTitle.textContent = "Task List";
-// taskTitle.innerText = "My Tasks";
-// taskTitle.innerHTML = '<span style="color:red">Task List</span>';
+  // Timestamp
+  val = e.timeStamp;
 
-// document.querySelector()
+  // Coords event relative to the window
+  val = e.clientY;
+  val = e.clientX;
 
-console.log(document.querySelector("#task-title"));
-console.log(document.querySelector(".card-title"));
-console.log(document.querySelector("h5"));
+  // Coords event relative to the element
+  val = e.offsetY;
+  val = e.offsetX;
 
-document.querySelector("li").style.color = "red";
-document.querySelector("li:last-child").style.color = "red";
-document.querySelector("li:nth-child(3)").style.color = "yellow";
-document.querySelector("li:nth-child(4)").textContent = "Hello World";
-document.querySelector("li:nth-child(odd)").style.background = "#ccc";
-document.querySelector("li:nth-child(even)").style.background = "#f4f4f4";
+  console.log(val);
+}
